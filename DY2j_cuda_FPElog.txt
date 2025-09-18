@@ -1,0 +1,1548 @@
+[1;31mNote that this is a development version.
+This version is intended for development/beta testing and NOT for production.
+This version has not been fully tested (if at all) and might have limited user support (if at all)[0m
+Running MG5 in debug mode
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.2                 2025-03-19         *
+[1;31m*                                                          *[1;0m
+[1;31m*          WARNING: UNKNOWN DEVELOPMENT VERSION.           *[1;0m
+[1;31m*            WARNING: DO NOT USE FOR PRODUCTION            *[1;0m
+[1;31m*                                                          *[1;0m
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*              http://madgraph.phys.ucl.ac.be/             *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from input/mg5_configuration.txt 
+fastjet-config does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+eMELA-config does not seem to correspond to a valid eMELA-config executable.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/eMELA-config (including eMELA-config).
+ MG5_aMC> set eMELA /PATH/TO/eMELA-config
+
+set lhapdf to lhapdf-config
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+No valid eps viewer found. Please set in ./input/mg5_configuration.txt
+No valid web browser found. Please set in ./input/mg5_configuration.txt
+import /users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/input_card_b.txt
+The import format was not given, so we guess it as command
+launch DY2j_cuda.mad
+[1;32mDEBUG:  error = [0m reload() argument must be a module [1;30m[launch_ext_program.py at line 647][0m [0m
+************************************************************
+*                                                          *
+*                      W E L C O M E to                    *
+*             M A D G R A P H 5 _ a M C @ N L O            *
+*                      M A D E V E N T                     *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 3.6.2                 2025-03-19         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************
+INFO: load configuration from /users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/DY2j_cuda.mad/Cards/me5_configuration.txt  
+INFO: load configuration from /users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/input/mg5_configuration.txt  
+INFO: load configuration from /users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/DY2j_cuda.mad/Cards/me5_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+No valid eps viewer found. Please set in ./input/mg5_configuration.txt
+No valid web browser found. Please set in ./input/mg5_configuration.txt
+generate_events run_01
+stty: 'standard input': Inappropriate ioctl for device
+[1;32mDEBUG:  'try to use plugin class', path.replace('run_card.dat', '../bin/internal/launch_plugin.py') = [0m try to use plugin class /users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/DY2j_cuda.mad/Cards/../bin/internal/launch_plugin.py [1;30m[banner.py at line 2697][0m [0m
+[1;32mDEBUG:  'try to use plugin class', path.replace('run_card.dat', '../bin/internal/launch_plugin.py') = [0m try to use plugin class /users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/DY2j_cuda.mad/Cards/run_card_default.dat [1;30m[banner.py at line 2697][0m [0m
+set nevents 250000
+[1mINFO: modify parameter nevents of the run_card.dat to 250000 [0m
+set gridpack False
+[1mINFO: modify parameter gridpack of the run_card.dat to False [0m
+set cudacpp_backend cuda
+[1mINFO: modify parameter cudacpp_backend of the run_card.dat to cuda [0m
+[1;32mDEBUG: keep SDE to 1 [0m
+INFO: Update the dependent parameter of the param_card.dat 
+[1;34mWARNING: update the strong coupling value (alpha_s) to the value from the pdf selected: 0.13 [0m
+[1;32mDEBUG:  'try to use plugin class', path.replace('run_card.dat', '../bin/internal/launch_plugin.py') = [0m try to use plugin class /users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/DY2j_cuda.mad/Cards/../bin/internal/launch_plugin.py [1;30m[banner.py at line 2697][0m [0m
+[1;32mDEBUG:  'try to use plugin class', path.replace('run_card.dat', '../bin/internal/launch_plugin.py') = [0m try to use plugin class /users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/DY2j_cuda.mad/Cards/../bin/internal/launch_plugin.py [1;30m[banner.py at line 2697][0m [0m
+[1;32mDEBUG:  'try to use plugin class', path.replace('run_card.dat', '../bin/internal/launch_plugin.py') = [0m try to use plugin class /users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/DY2j_cuda.mad/Cards/../bin/internal/launch_plugin.py [1;30m[banner.py at line 2697][0m [0m
+[1;34mvalue '[]' for entry 'bypass_check' is not valid.  Preserving previous value: '[]'.
+allowed values are any list composed of the following entries: partonshower[0m
+Generating 250000 events with run name run_01
+survey  run_01 
+[1;32mDEBUG:  'try to use plugin class', path.replace('run_card.dat', '../bin/internal/launch_plugin.py') = [0m try to use plugin class /users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/DY2j_cuda.mad/Cards/../bin/internal/launch_plugin.py [1;30m[banner.py at line 2697][0m [0m
+INFO: compile directory 
+[1;34mNot able to open file /users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/DY2j_cuda.mad/crossx.html since no program configured.Please set one in ./input/mg5_configuration.txt[0m
+[1;32mwrite compile file for card: /users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/DY2j_cuda.mad/Cards/param_card.dat[0m
+[1;32mrun_card missed argument polbeam1. Takes default: 0.0[0m
+[1;32mrun_card missed argument polbeam2. Takes default: 0.0[0m
+[1;32mrun_card missed argument nb_proton1. Takes default: 1[0m
+[1;32mrun_card missed argument nb_proton2. Takes default: 1[0m
+[1;32mrun_card missed argument nb_neutron1. Takes default: 0[0m
+[1;32mrun_card missed argument nb_neutron2. Takes default: 0[0m
+[1;32mrun_card missed argument mass_ion1. Takes default: -1.0[0m
+[1;32mrun_card missed argument mass_ion2. Takes default: -1.0[0m
+[1;32mrun_card missed argument pdlabel1. Takes default: nn23lo1[0m
+[1;32mrun_card missed argument pdlabel2. Takes default: nn23lo1[0m
+[1;32mrun_card missed argument fixed_fac_scale1. Takes default: False[0m
+[1;32mrun_card missed argument fixed_fac_scale2. Takes default: False[0m
+[1;32mrun_card missed argument fixed_extra_scale. Takes default: False[0m
+[1;32mrun_card missed argument mue_ref_fixed. Takes default: 91.188[0m
+[1;32mrun_card missed argument mue_over_ref. Takes default: 1.0[0m
+[1;32mrun_card missed argument ievo_eva. Takes default: 0[0m
+[1;32mrun_card missed argument highestmult. Takes default: 1[0m
+[1;32mrun_card missed argument ktscheme. Takes default: 1[0m
+[1;32mrun_card missed argument pdfwgt. Takes default: True[0m
+[1;32mrun_card missed argument clusinfo. Takes default: True[0m
+[1;32mrun_card missed argument lhe_version. Takes default: 3.0[0m
+[1;32mrun_card missed argument cut_decays. Takes default: False[0m
+[1;32mrun_card missed argument limhel. Takes default: 0.0[0m
+[1;32mrun_card missed argument ptb. Takes default: 0.0[0m
+[1;32mrun_card missed argument pta. Takes default: 10.0[0m
+[1;32mrun_card missed argument misset. Takes default: 0.0[0m
+[1;32mrun_card missed argument ptheavy. Takes default: 0.0[0m
+[1;32mrun_card missed argument ptbmax. Takes default: -1.0[0m
+[1;32mrun_card missed argument ptamax. Takes default: -1.0[0m
+[1;32mrun_card missed argument missetmax. Takes default: -1.0[0m
+[1;32mrun_card missed argument ej. Takes default: 0.0[0m
+[1;32mrun_card missed argument eb. Takes default: 0.0[0m
+[1;32mrun_card missed argument ea. Takes default: 0.0[0m
+[1;32mrun_card missed argument el. Takes default: 0.0[0m
+[1;32mrun_card missed argument ejmax. Takes default: -1.0[0m
+[1;32mrun_card missed argument ebmax. Takes default: -1.0[0m
+[1;32mrun_card missed argument eamax. Takes default: -1.0[0m
+[1;32mrun_card missed argument elmax. Takes default: -1.0[0m
+[1;32mrun_card missed argument etab. Takes default: -1.0[0m
+[1;32mrun_card missed argument etaa. Takes default: 2.5[0m
+[1;32mrun_card missed argument etajmin. Takes default: 0.0[0m
+[1;32mrun_card missed argument etabmin. Takes default: 0.0[0m
+[1;32mrun_card missed argument etaamin. Takes default: 0.0[0m
+[1;32mrun_card missed argument drbb. Takes default: 0.0[0m
+[1;32mrun_card missed argument draa. Takes default: 0.4[0m
+[1;32mrun_card missed argument drbj. Takes default: 0.0[0m
+[1;32mrun_card missed argument draj. Takes default: 0.4[0m
+[1;32mrun_card missed argument drab. Takes default: 0.0[0m
+[1;32mrun_card missed argument drbl. Takes default: 0.0[0m
+[1;32mrun_card missed argument dral. Takes default: 0.4[0m
+[1;32mrun_card missed argument drbbmax. Takes default: -1.0[0m
+[1;32mrun_card missed argument draamax. Takes default: -1.0[0m
+[1;32mrun_card missed argument drbjmax. Takes default: -1.0[0m
+[1;32mrun_card missed argument drajmax. Takes default: -1.0[0m
+[1;32mrun_card missed argument drabmax. Takes default: -1.0[0m
+[1;32mrun_card missed argument drblmax. Takes default: -1.0[0m
+[1;32mrun_card missed argument dralmax. Takes default: -1.0[0m
+[1;32mrun_card missed argument mmbb. Takes default: 0.0[0m
+[1;32mrun_card missed argument mmaa. Takes default: 0.0[0m
+[1;32mrun_card missed argument mmbbmax. Takes default: -1.0[0m
+[1;32mrun_card missed argument mmaamax. Takes default: -1.0[0m
+[1;32mrun_card missed argument xptb. Takes default: 0.0[0m
+[1;32mrun_card missed argument xpta. Takes default: 0.0[0m
+[1;32mrun_card missed argument ptj3min. Takes default: 0.0[0m
+[1;32mrun_card missed argument ptj3max. Takes default: -1.0[0m
+[1;32mrun_card missed argument ptj4min. Takes default: 0.0[0m
+[1;32mrun_card missed argument ptj4max. Takes default: -1.0[0m
+[1;32mrun_card missed argument ptl3min. Takes default: 0.0[0m
+[1;32mrun_card missed argument ptl3max. Takes default: -1.0[0m
+[1;32mrun_card missed argument ptl4min. Takes default: 0.0[0m
+[1;32mrun_card missed argument ptl4max. Takes default: -1.0[0m
+[1;32mrun_card missed argument ht2min. Takes default: 0.0[0m
+[1;32mrun_card missed argument ht3min. Takes default: 0.0[0m
+[1;32mrun_card missed argument ht4min. Takes default: 0.0[0m
+[1;32mrun_card missed argument ht2max. Takes default: -1.0[0m
+[1;32mrun_card missed argument ht3max. Takes default: -1.0[0m
+[1;32mrun_card missed argument ht4max. Takes default: -1.0[0m
+[1;32mrun_card missed argument ptgmin. Takes default: 0.0[0m
+[1;32mrun_card missed argument r0gamma. Takes default: 0.4[0m
+[1;32mrun_card missed argument xn. Takes default: 1.0[0m
+[1;32mrun_card missed argument epsgamma. Takes default: 1.0[0m
+[1;32mrun_card missed argument isoem. Takes default: True[0m
+[1;32mrun_card missed argument gridrun. Takes default: False[0m
+[1;32mrun_card missed argument fixed_couplings. Takes default: True[0m
+[1;32mrun_card missed argument mc_grouped_subproc. Takes default: True[0m
+[1;32mrun_card missed argument xmtcentral. Takes default: 0.0[0m
+[1;32mrun_card missed argument d. Takes default: 1.0[0m
+[1;32mrun_card missed argument issgridfile. Takes default: [0m
+[1;32mrun_card missed argument small_width_treatment. Takes default: 1e-06[0m
+[1;32mrun_card missed argument bias_parameters. Takes default: {}[0m
+compile Source Directory
+[1;32mDEBUG:  FPTYPE checked [1;30m[launch_plugin.py at line 37][0m [0m
+[1;32mCompiling the bias module 'dummy'[0m
+Using random number seed offset = 21
+INFO: Running Survey 
+Creating Jobs
+Working on SubProcesses
+[1;32m[Errno 2] No such file or directory: '/users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/DY2j_cuda.mad/SubProcesses/P0_ddx_taptam/Hel/selection'[0m
+INFO:     P2_gg_epemuux  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_gg_epemddx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_gg_taptamuux  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_gg_taptamddx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_gu_epemgu  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_gd_epemgd  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_gux_epemgux  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_gdx_epemgdx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_gu_taptamgu  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_gd_taptamgd  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_gux_taptamgux  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_gdx_taptamgdx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_uu_epemuu  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_uux_epemuux  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_dd_epemdd  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_ddx_epemddx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_uxux_epemuxux  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_dxdx_epemdxdx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_uc_epemuc  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_ud_epemud  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_uux_epemccx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eb8960 in ???
+#1  0x155554eb7ac5 in ???
+#2  0x155554ba551f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x5555555770ef in ???
+#4  0x555555577c6d in ???
+#5  0x555555578278 in ???
+#6  0x55555558f270 in ???
+#7  0x55555557551a in ???
+#8  0x55555557595b in ???
+#9  0x155554b8cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b8ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eb8960 in ???
+#1  0x155554eb7ac5 in ???
+#2  0x155554ba551f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x5555555770ef in ???
+#4  0x555555577c6d in ???
+#5  0x555555578278 in ???
+#6  0x55555558f270 in ???
+#7  0x55555557551a in ???
+#8  0x55555557595b in ???
+#9  0x155554b8cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b8ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eb8960 in ???
+#1  0x155554eb7ac5 in ???
+#2  0x155554ba551f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x5555555770ef in ???
+#4  0x555555577c6d in ???
+#5  0x555555578278 in ???
+#6  0x55555558f270 in ???
+#7  0x55555557551a in ???
+#8  0x55555557595b in ???
+#9  0x155554b8cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b8ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+#0  0x155554eb8960 in ???
+#1  0x155554eb7ac5 in ???
+#2  0x155554ba551f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x5555555770ef in ???
+#4  0x555555577c6d in ???
+#5  0x555555578278 in ???
+#6  0x55555558f270 in ???
+#7  0x55555557551a in ???
+#8  0x55555557595b in ???
+#9  0x155554b8cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b8ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+INFO:     P2_uux_epemddx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+INFO:     P2_ucx_epemucx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_udx_epemudx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eb8960 in ???
+#1  0x155554eb7ac5 in ???
+#2  0x155554ba551f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x555555577309 in ???
+#4  0x555555577e5c in ???
+#5  0x555555578467 in ???
+#6  0x55555558f470 in ???
+#7  0x55555557551a in ???
+#8  0x55555557595b in ???
+#9  0x155554b8cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b8ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eb8960 in ???
+#1  0x155554eb7ac5 in ???
+#2  0x155554ba551f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x555555577309 in ???
+#4  0x555555577e5c in ???
+#5  0x555555578467 in ???
+#6  0x55555558f470 in ???
+#7  0x55555557551a in ???
+#8  0x55555557595b in ???
+#9  0x155554b8cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b8ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+INFO:     P2_ds_epemds  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eb8960 in ???
+#1  0x155554eb7ac5 in ???
+#2  0x155554ba551f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x555555577309 in ???
+#4  0x555555577e5c in ???
+#5  0x555555578467 in ???
+#6  0x55555558f470 in ???
+#7  0x55555557551a in ???
+#8  0x55555557595b in ???
+#9  0x155554b8cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b8ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eb8960 in ???
+#1  0x155554eb7ac5 in ???
+#2  0x155554ba551f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x555555577309 in ???
+#4  0x555555577e5c in ???
+#5  0x555555578467 in ???
+#6  0x55555558f470 in ???
+#7  0x55555557551a in ???
+#8  0x55555557595b in ???
+#9  0x155554b8cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b8ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+INFO:     P2_dux_epemdux  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_ddx_epemuux  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_ddx_epemssx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_dsx_epemdsx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_uxcx_epemuxcx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_uxdx_epemuxdx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eb8960 in ???
+#1  0x155554eb7ac5 in ???
+#2  0x155554ba551f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x5555555770ef in ???
+#4  0x555555577c6d in ???
+#5  0x555555578278 in ???
+#6  0x55555558f280 in ???
+#7  0x55555557551a in ???
+#8  0x55555557595b in ???
+#9  0x155554b8cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b8ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+#0  0x155554eb8960 in ???
+#1  0x155554eb7ac5 in ???
+#2  0x155554ba551f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x5555555770ef in ???
+#4  0x555555577c6d in ???
+#5  0x555555578278 in ???
+#6  0x55555558f280 in ???
+#7  0x55555557551a in ???
+#8  0x55555557595b in ???
+#9  0x155554b8cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b8ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eb8960 in ???
+#1  0x155554eb7ac5 in ???
+#2  0x155554ba551f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x5555555770ef in ???
+#4  0x555555577c6d in ???
+#5  0x555555578278 in ???
+#6  0x55555558f280 in ???
+#7  0x55555557551a in ???
+#8  0x55555557595b in ???
+#9  0x155554b8cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b8ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+#0  0x155554eb8960 in ???
+#1  0x155554eb7ac5 in ???
+#2  0x155554ba551f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x5555555770ef in ???
+#4  0x555555577c6d in ???
+#5  0x555555578278 in ???
+#6  0x55555558f280 in ???
+#7  0x55555557551a in ???
+#8  0x55555557595b in ???
+#9  0x155554b8cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b8ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+INFO:     P2_uxb_epembux  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_dxsx_epemdxsx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eb8960 in ???
+#1  0x155554eb7ac5 in ???
+#2  0x155554ba551f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x55555557726c in ???
+#4  0x555555577dbf in ???
+#5  0x5555555783ca in ???
+#6  0x55555558f3b0 in ???
+#7  0x555555575524 in ???
+#8  0x555555575965 in ???
+#9  0x155554b8cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b8ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eb8960 in ???
+#1  0x155554eb7ac5 in ???
+#2  0x155554ba551f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x55555557726c in ???
+#4  0x555555577dbf in ???
+#5  0x5555555783ca in ???
+#6  0x55555558f3b0 in ???
+#7  0x555555575524 in ???
+#8  0x555555575965 in ???
+#9  0x155554b8cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b8ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+INFO:     P2_dxb_epembdx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eb8960 in ???
+#1  0x155554eb7ac5 in ???
+#2  0x155554ba551f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x55555557726c in ???
+#4  0x555555577dbf in ???
+#5  0x5555555783ca in ???
+#6  0x55555558f3b0 in ???
+#7  0x555555575524 in ???
+#8  0x555555575965 in ???
+#9  0x155554b8cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b8ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eb8960 in ???
+#1  0x155554eb7ac5 in ???
+#2  0x155554ba551f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x55555557726c in ???
+#4  0x555555577dbf in ???
+#5  0x5555555783ca in ???
+#6  0x55555558f3b0 in ???
+#7  0x555555575524 in ???
+#8  0x555555575965 in ???
+#9  0x155554b8cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b8ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+INFO:     P2_uu_taptamuu  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eb8960 in ???
+#1  0x155554eb7ac5 in ???
+#2  0x155554ba551f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x555555577261 in ???
+#4  0x555555577db4 in ???
+#5  0x5555555783bf in ???
+#6  0x55555558f2a0 in ???
+#7  0x555555575519 in ???
+#8  0x55555557595a in ???
+#9  0x155554b8cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b8ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eb8960 in ???
+#1  0x155554eb7ac5 in ???
+#2  0x155554ba551f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x555555577261 in ???
+#4  0x555555577db4 in ???
+#5  0x5555555783bf in ???
+#6  0x55555558f2a0 in ???
+#7  0x555555575519 in ???
+#8  0x55555557595a in ???
+#9  0x155554b8cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b8ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+INFO:     P2_uux_taptamuux  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eb8960 in ???
+#1  0x155554eb7ac5 in ???
+#2  0x155554ba551f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x555555577261 in ???
+#4  0x555555577db4 in ???
+#5  0x5555555783bf in ???
+#6  0x55555558f2a0 in ???
+#7  0x555555575519 in ???
+#8  0x55555557595a in ???
+#9  0x155554b8cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b8ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eb8960 in ???
+#1  0x155554eb7ac5 in ???
+#2  0x155554ba551f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x555555577261 in ???
+#4  0x555555577db4 in ???
+#5  0x5555555783bf in ???
+#6  0x55555558f2a0 in ???
+#7  0x555555575519 in ???
+#8  0x55555557595a in ???
+#9  0x155554b8cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b8ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+INFO:     P2_dd_taptamdd  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_ddx_taptamddx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_uxux_taptamuxux  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_dxdx_taptamdxdx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_uc_taptamuc  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_ud_taptamud  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_uux_taptamccx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eac960 in ???
+#1  0x155554eabac5 in ???
+#2  0x155554b9951f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x555555577096 in ???
+#4  0x555555577be5 in ???
+#5  0x5555555781f0 in ???
+#6  0x55555558f1f0 in ???
+#7  0x555555575523 in ???
+#8  0x555555575964 in ???
+#9  0x155554b80d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b80e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eac960 in ???
+#1  0x155554eabac5 in ???
+#2  0x155554b9951f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x555555577096 in ???
+#4  0x555555577be5 in ???
+#5  0x5555555781f0 in ???
+#6  0x55555558f1f0 in ???
+#7  0x555555575523 in ???
+#8  0x555555575964 in ???
+#9  0x155554b80d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b80e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eac960 in ???
+#1  0x155554eabac5 in ???
+#2  0x155554b9951f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x555555577096 in ???
+#4  0x555555577be5 in ???
+#5  0x5555555781f0 in ???
+#6  0x55555558f1f0 in ???
+#7  0x555555575523 in ???
+#8  0x555555575964 in ???
+#9  0x155554b80d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b80e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eac960 in ???
+#1  0x155554eabac5 in ???
+#2  0x155554b9951f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x555555577096 in ???
+#4  0x555555577be5 in ???
+#5  0x5555555781f0 in ???
+#6  0x55555558f1f0 in ???
+#7  0x555555575523 in ???
+#8  0x555555575964 in ???
+#9  0x155554b80d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b80e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+INFO:     P2_uux_taptamddx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_ucx_taptamucx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_udx_taptamudx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eac960 in ???
+#1  0x155554eabac5 in ???
+#2  0x155554b9951f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x555555577271 in ???
+#4  0x555555577def in ???
+#5  0x5555555783fa in ???
+#6  0x55555558f400 in ???
+#7  0x555555575540 in ???
+#8  0x555555575981 in ???
+#9  0x155554b80d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b80e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eac960 in ???
+#1  0x155554eabac5 in ???
+#2  0x155554b9951f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x555555577271 in ???
+#4  0x555555577def in ???
+#5  0x5555555783fa in ???
+#6  0x55555558f400 in ???
+#7  0x555555575540 in ???
+#8  0x555555575981 in ???
+#9  0x155554b80d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b80e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+INFO:     P2_ds_taptamds  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eac960 in ???
+#1  0x155554eabac5 in ???
+#2  0x155554b9951f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x555555577271 in ???
+#4  0x555555577def in ???
+#5  0x5555555783fa in ???
+#6  0x55555558f400 in ???
+#7  0x555555575540 in ???
+#8  0x555555575981 in ???
+#9  0x155554b80d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b80e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eac960 in ???
+#1  0x155554eabac5 in ???
+#2  0x155554b9951f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x555555577271 in ???
+#4  0x555555577def in ???
+#5  0x5555555783fa in ???
+#6  0x55555558f400 in ???
+#7  0x555555575540 in ???
+#8  0x555555575981 in ???
+#9  0x155554b80d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b80e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+INFO:     P2_dux_taptamdux  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_ddx_taptamuux  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_ddx_taptamssx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_dsx_taptamdsx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_uxcx_taptamuxcx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_uxdx_taptamuxdx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eac960 in ???
+#1  0x155554eabac5 in ???
+#2  0x155554b9951f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x555555577096 in ???
+#4  0x555555577be5 in ???
+#5  0x5555555781f0 in ???
+#6  0x55555558f1f0 in ???
+#7  0x555555575523 in ???
+#8  0x555555575964 in ???
+#9  0x155554b80d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b80e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+#0  0x155554eac960 in ???
+#1  0x155554eabac5 in ???
+#2  0x155554b9951f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x555555577096 in ???
+#4  0x555555577be5 in ???
+#5  0x5555555781f0 in ???
+#6  0x55555558f1f0 in ???
+#7  0x555555575523 in ???
+#8  0x555555575964 in ???
+#9  0x155554b80d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b80e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eac960 in ???
+#1  0x155554eabac5 in ???
+#2  0x155554b9951f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x555555577096 in ???
+#4  0x555555577be5 in ???
+#5  0x5555555781f0 in ???
+#6  0x55555558f1f0 in ???
+#7  0x555555575523 in ???
+#8  0x555555575964 in ???
+#9  0x155554b80d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b80e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+#0  0x155554eac960 in ???
+#1  0x155554eabac5 in ???
+#2  0x155554b9951f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x555555577096 in ???
+#4  0x555555577be5 in ???
+#5  0x5555555781f0 in ???
+#6  0x55555558f1f0 in ???
+#7  0x555555575523 in ???
+#8  0x555555575964 in ???
+#9  0x155554b80d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b80e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+INFO:     P2_uxb_taptambux  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_dxsx_taptamdxsx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eac960 in ???
+#1  0x155554eabac5 in ???
+#2  0x155554b9951f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x5555555771ca in ???
+#4  0x555555577d48 in ???
+#5  0x555555578353 in ???
+#6  0x55555558f340 in ???
+#7  0x555555575540 in ???
+#8  0x555555575981 in ???
+#9  0x155554b80d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b80e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eac960 in ???
+#1  0x155554eabac5 in ???
+#2  0x155554b9951f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x5555555771ca in ???
+#4  0x555555577d48 in ???
+#5  0x555555578353 in ???
+#6  0x55555558f340 in ???
+#7  0x555555575540 in ???
+#8  0x555555575981 in ???
+#9  0x155554b80d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b80e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+INFO:     P2_dxb_taptambdx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eac960 in ???
+#1  0x155554eabac5 in ???
+#2  0x155554b9951f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x5555555771ca in ???
+#4  0x555555577d48 in ???
+#5  0x555555578353 in ???
+#6  0x55555558f340 in ???
+#7  0x555555575540 in ???
+#8  0x555555575981 in ???
+#9  0x155554b80d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b80e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eac960 in ???
+#1  0x155554eabac5 in ???
+#2  0x155554b9951f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x5555555771ca in ???
+#4  0x555555577d48 in ???
+#5  0x555555578353 in ???
+#6  0x55555558f340 in ???
+#7  0x555555575540 in ???
+#8  0x555555575981 in ???
+#9  0x155554b80d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b80e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+INFO:     P2_uux_epemgg  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554ead960 in ???
+#1  0x155554eacac5 in ???
+#2  0x155554b9a51f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x5555555771d2 in ???
+#4  0x555555577d50 in ???
+#5  0x55555557835b in ???
+#6  0x55555558f240 in ???
+#7  0x555555575548 in ???
+#8  0x555555575989 in ???
+#9  0x155554b81d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b81e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554ead960 in ???
+#1  0x155554eacac5 in ???
+#2  0x155554b9a51f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x5555555771d2 in ???
+#4  0x555555577d50 in ???
+#5  0x55555557835b in ???
+#6  0x55555558f240 in ???
+#7  0x555555575548 in ???
+#8  0x555555575989 in ???
+#9  0x155554b81d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b81e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+INFO:     P2_ddx_epemgg  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554ead960 in ???
+#1  0x155554eacac5 in ???
+#2  0x155554b9a51f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x5555555771d2 in ???
+#4  0x555555577d50 in ???
+#5  0x55555557835b in ???
+#6  0x55555558f240 in ???
+#7  0x555555575548 in ???
+#8  0x555555575989 in ???
+#9  0x155554b81d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b81e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554ead960 in ???
+#1  0x155554eacac5 in ???
+#2  0x155554b9a51f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x5555555771d2 in ???
+#4  0x555555577d50 in ???
+#5  0x55555557835b in ???
+#6  0x55555558f240 in ???
+#7  0x555555575548 in ???
+#8  0x555555575989 in ???
+#9  0x155554b81d8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b81e3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+rm: cannot remove 'results.dat': No such file or directory
+ERROR DETECTED
+INFO:     P2_uux_taptamgg  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P2_ddx_taptamgg  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P1_gu_epemu  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P1_gd_epemd  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P1_gux_epemux  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P1_gdx_epemdx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P1_gu_taptamu  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P1_gd_taptamd  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P1_gux_taptamux  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P1_gdx_taptamdx  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P1_uux_epemg  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P1_ddx_epemg  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P1_uux_taptamg  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P1_ddx_taptamg  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P0_uux_epem  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P0_ddx_epem  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P0_uux_taptam  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:     P0_ddx_taptam  
+Building madevent in madevent_interface.py with 'cuda' matrix elements
+INFO:  Idle: 1,  Running: 1,  Completed: 316 [ current time: 23h36 ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 316 [ current time: 23h36 ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 318 [  6.1s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 318 [  6.1s  ] 
+INFO: End survey 
+refine 250000
+Creating Jobs
+INFO: Refine results to 250000 
+INFO: Generating 250000.0 unweighted events. 
+[1;31mError when reading /users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/DY2j_cuda.mad/SubProcesses/P2_uc_epemuc/G2/results.dat[0m
+Traceback (most recent call last):
+  File "/users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/madgraph/madevent/sum_html.py", line 307, in read_results
+    self.axsec, self.xerru, self.xerrc, self.nevents, self.nw,\
+ValueError: not enough values to unpack (expected 10, got 5)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/madgraph/interface/extended_cmd.py", line 1548, in onecmd
+    return self.onecmd_orig(line, **opt)
+  File "/users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/madgraph/interface/extended_cmd.py", line 1497, in onecmd_orig
+    return func(arg, **opt)
+  File "/users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/madgraph/interface/madevent_interface.py", line 2406, in do_generate_events
+    self.run_generate_events(switch_mode, args)
+  File "/users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/madgraph/interface/common_run_interface.py", line 7886, in new_fct
+    scan_over_run_card(original_fct, obj, *args, **opts)
+  File "/users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/madgraph/interface/common_run_interface.py", line 7818, in scan_over_run_card
+    return original_fct(obj, *args, **opts)
+  File "/users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/madgraph/interface/madevent_interface.py", line 2603, in run_generate_events
+    self.exec_cmd('refine %s' % nb_event, postcmd=False)
+  File "/users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/madgraph/interface/extended_cmd.py", line 1577, in exec_cmd
+    stop = Cmd.onecmd_orig(current_interface, line, **opt)
+  File "/users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/madgraph/interface/extended_cmd.py", line 1497, in onecmd_orig
+    return func(arg, **opt)
+  File "/users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/madgraph/interface/madevent_interface.py", line 3604, in do_refine
+    x_improve.launch() # create the ajob for the refinment.
+  File "/users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/madgraph/madevent/gen_ximprove.py", line 1082, in launch
+    self.results = sum_html.collect_result(self.cmd,
+  File "/users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/madgraph/madevent/sum_html.py", line 753, in collect_result
+    P_comb.add_results(os.path.basename(G), path, mfactors[G])
+  File "/users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/madgraph/madevent/sum_html.py", line 434, in add_results
+    oneresult.read_results(filepath)
+  File "/users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/madgraph/madevent/sum_html.py", line 316, in read_results
+    raise Exception("Reported error: End code %s \n Full associated log: \n%s"\
+Exception: Reported error: End code 136.0 
+ Full associated log: 
+__GpuRuntime: calling GpuSetDevice(0)
+WARNING! Instantiate device Bridge (nevt=16384, gpublocks=64, gputhreads=256, gpublocks*gputhreads=16384)
+INFO: The following Floating Point Exceptions will cause SIGFPE program aborts: FE_DIVBYZERO, FE_INVALID, FE_OVERFLOW
+ FBRIDGE_MODE (default) =            1
+ VECSIZE_USED (default) =        16384
+ Process in group number            2
+ A PDF is used, so alpha_s(MZ) is going to be modified
+ Old value of alpha_s from param_card:   0.13000000000000003     
+  ****************************************
+ 
+       NNPDFDriver version 1.0.3
+   Grid: NNPDF23_lo_as_0130_qed_mem0.grid
+  ****************************************
+ New value of alpha_s from PDF nn23lo1:  0.13000000000000000     
+ Warning! ptj set to xqcut=   30.000000000000000       to improve integration efficiency
+ Note that this might affect non-radiated jets,
+ e.g. from decays. Use cut_decays=F in run_card.
+ Warning! mmjj set to xqcut=   30.000000000000000       to improve integration efficiency
+ Note that this might affect non-radiated jets,
+ e.g. from decays. Use cut_decays=F in run_card.
+ Define smin to   4000.0000000000000     
+ *****************************************************
+ *               MadGraph/MadEvent                   *
+ *        --------------------------------           *
+ *          http://madgraph.hep.uiuc.edu             *
+ *          http://madgraph.phys.ucl.ac.be           *
+ *          http://madgraph.roma2.infn.it            *
+ *        --------------------------------           *
+ *                                                   *
+ *          PARAMETER AND COUPLING VALUES            *
+ *                                                   *
+ *****************************************************
+
+  External Params
+  ---------------------------------
+  
+ mdl_MT =    173.00000000000000     
+ mdl_MTA =    1.7769999999999999     
+ mdl_MZ =    91.188000000000002     
+ mdl_MH =    125.00000000000000     
+ aEWM1 =    132.50700000000001     
+ mdl_Gf =    1.1663900000000000E-005
+ aS =   0.13000000000000003     
+ mdl_ymt =    173.00000000000000     
+ mdl_ymtau =    1.7769999999999999     
+ mdl_WT =    1.4915000000000000     
+ mdl_WZ =    2.4414039999999999     
+ mdl_WW =    2.0476000000000001     
+ mdl_WH =    6.3823389999999999E-003
+  Internal Params
+  ---------------------------------
+  
+ mdl_conjg__CKM3x3 =    1.0000000000000000     
+ mdl_conjg__CKM1x1 =    1.0000000000000000     
+ mdl_CKM3x3 =    1.0000000000000000     
+ mdl_complexi =                (0.0000000000000000,1.0000000000000000)
+ mdl_MZ__exp__2 =    8315.2513440000002     
+ mdl_MZ__exp__4 =    69143404.913893804     
+ mdl_sqrt__2 =    1.4142135623730951     
+ mdl_MH__exp__2 =    15625.000000000000     
+ mdl_aEW =    7.5467711139788835E-003
+ mdl_MW =    80.419002445756163     
+ mdl_sqrt__aEW =    8.6872153846781555E-002
+ mdl_ee =   0.30795376724436879     
+ mdl_MW__exp__2 =    6467.2159543705357     
+ mdl_sw2 =   0.22224648578577766     
+ mdl_cw =   0.88190334743339216     
+ mdl_sqrt__sw2 =   0.47143025548407230     
+ mdl_sw =   0.47143025548407230     
+ mdl_g1 =   0.34919219678733299     
+ mdl_gw =   0.65323293034757990     
+ mdl_vev =    246.21845810181637     
+ mdl_vev__exp__2 =    60623.529110035903     
+ mdl_lam =   0.12886910601690263     
+ mdl_yt =   0.99366614581500623     
+ mdl_ytau =    1.0206617000654717E-002
+ mdl_muH =    88.388347648318430     
+ mdl_I2x33 =               (0.99366614581500623,0.0000000000000000)
+ mdl_I3x33 =               (0.99366614581500623,0.0000000000000000)
+ mdl_ee__exp__2 =    9.4835522759998875E-002
+ mdl_sw__exp__2 =   0.22224648578577769     
+ mdl_cw__exp__2 =   0.77775351421422245     
+  Internal Params evaluated point by point
+  ----------------------------------------
+  
+ mdl_sqrt__aS =   0.36055512754639896     
+ mdl_G__exp__2 =    1.6336281798666927     
+  Couplings of sm-no_b_mass
+  ---------------------------------
+  
+        GC_10 =  -0.12781E+01   0.00000E+00
+        GC_11 =   0.00000E+00   0.12781E+01
+         GC_1 =  -0.00000E+00  -0.10265E+00
+         GC_2 =   0.00000E+00   0.20530E+00
+         GC_3 =  -0.00000E+00  -0.30795E+00
+        GC_50 =  -0.00000E+00  -0.28804E+00
+        GC_58 =  -0.00000E+00  -0.27437E-01
+        GC_59 =   0.00000E+00   0.82310E-01
+
+ Collider parameters:
+ --------------------
+
+ Running at P P   machine @    13000.000000000000       GeV
+
+Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+
+Backtrace for this error:
+#0  0x155554eb8960 in ???
+#1  0x155554eb7ac5 in ???
+#2  0x155554ba551f in ???
+	at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+#3  0x5555555770ef in ???
+#4  0x555555577c6d in ???
+#5  0x555555578278 in ???
+#6  0x55555558f270 in ???
+#7  0x55555557551a in ???
+#8  0x55555557595b in ???
+#9  0x155554b8cd8f in __libc_start_call_main
+	at ../sysdeps/nptl/libc_start_call_main.h:58
+#10  0x155554b8ce3f in __libc_start_main_impl
+	at ../csu/libc-start.c:392
+#11  0x555555557564 in ???
+#12  0xffffffffffffffff in ???
+
+ls status:
+input_app.txt
+run1_app.log
+
+[1;31mCommand "generate_events run_01" interrupted with error:
+Exception : Reported error: End code 136.0 
+	 Full associated log: 
+	__GpuRuntime: calling GpuSetDevice(0)
+	WARNING! Instantiate device Bridge (nevt=16384, gpublocks=64, gputhreads=256, gpublocks*gputhreads=16384)
+	INFO: The following Floating Point Exceptions will cause SIGFPE program aborts: FE_DIVBYZERO, FE_INVALID, FE_OVERFLOW
+	 FBRIDGE_MODE (default) =            1
+	 VECSIZE_USED (default) =        16384
+	 Process in group number            2
+	 A PDF is used, so alpha_s(MZ) is going to be modified
+	 Old value of alpha_s from param_card:   0.13000000000000003     
+	  ****************************************
+	 
+	       NNPDFDriver version 1.0.3
+	   Grid: NNPDF23_lo_as_0130_qed_mem0.grid
+	  ****************************************
+	 New value of alpha_s from PDF nn23lo1:  0.13000000000000000     
+	 Warning! ptj set to xqcut=   30.000000000000000       to improve integration efficiency
+	 Note that this might affect non-radiated jets,
+	 e.g. from decays. Use cut_decays=F in run_card.
+	 Warning! mmjj set to xqcut=   30.000000000000000       to improve integration efficiency
+	 Note that this might affect non-radiated jets,
+	 e.g. from decays. Use cut_decays=F in run_card.
+	 Define smin to   4000.0000000000000     
+	 *****************************************************
+	 *               MadGraph/MadEvent                   *
+	 *        --------------------------------           *
+	 *          http://madgraph.hep.uiuc.edu             *
+	 *          http://madgraph.phys.ucl.ac.be           *
+	 *          http://madgraph.roma2.infn.it            *
+	 *        --------------------------------           *
+	 *                                                   *
+	 *          PARAMETER AND COUPLING VALUES            *
+	 *                                                   *
+	 *****************************************************
+	
+	  External Params
+	  ---------------------------------
+	  
+	 mdl_MT =    173.00000000000000     
+	 mdl_MTA =    1.7769999999999999     
+	 mdl_MZ =    91.188000000000002     
+	 mdl_MH =    125.00000000000000     
+	 aEWM1 =    132.50700000000001     
+	 mdl_Gf =    1.1663900000000000E-005
+	 aS =   0.13000000000000003     
+	 mdl_ymt =    173.00000000000000     
+	 mdl_ymtau =    1.7769999999999999     
+	 mdl_WT =    1.4915000000000000     
+	 mdl_WZ =    2.4414039999999999     
+	 mdl_WW =    2.0476000000000001     
+	 mdl_WH =    6.3823389999999999E-003
+	  Internal Params
+	  ---------------------------------
+	  
+	 mdl_conjg__CKM3x3 =    1.0000000000000000     
+	 mdl_conjg__CKM1x1 =    1.0000000000000000     
+	 mdl_CKM3x3 =    1.0000000000000000     
+	 mdl_complexi =                (0.0000000000000000,1.0000000000000000)
+	 mdl_MZ__exp__2 =    8315.2513440000002     
+	 mdl_MZ__exp__4 =    69143404.913893804     
+	 mdl_sqrt__2 =    1.4142135623730951     
+	 mdl_MH__exp__2 =    15625.000000000000     
+	 mdl_aEW =    7.5467711139788835E-003
+	 mdl_MW =    80.419002445756163     
+	 mdl_sqrt__aEW =    8.6872153846781555E-002
+	 mdl_ee =   0.30795376724436879     
+	 mdl_MW__exp__2 =    6467.2159543705357     
+	 mdl_sw2 =   0.22224648578577766     
+	 mdl_cw =   0.88190334743339216     
+	 mdl_sqrt__sw2 =   0.47143025548407230     
+	 mdl_sw =   0.47143025548407230     
+	 mdl_g1 =   0.34919219678733299     
+	 mdl_gw =   0.65323293034757990     
+	 mdl_vev =    246.21845810181637     
+	 mdl_vev__exp__2 =    60623.529110035903     
+	 mdl_lam =   0.12886910601690263     
+	 mdl_yt =   0.99366614581500623     
+	 mdl_ytau =    1.0206617000654717E-002
+	 mdl_muH =    88.388347648318430     
+	 mdl_I2x33 =               (0.99366614581500623,0.0000000000000000)
+	 mdl_I3x33 =               (0.99366614581500623,0.0000000000000000)
+	 mdl_ee__exp__2 =    9.4835522759998875E-002
+	 mdl_sw__exp__2 =   0.22224648578577769     
+	 mdl_cw__exp__2 =   0.77775351421422245     
+	  Internal Params evaluated point by point
+	  ----------------------------------------
+	  
+	 mdl_sqrt__aS =   0.36055512754639896     
+	 mdl_G__exp__2 =    1.6336281798666927     
+	  Couplings of sm-no_b_mass
+	  ---------------------------------
+	  
+	        GC_10 =  -0.12781E+01   0.00000E+00
+	        GC_11 =   0.00000E+00   0.12781E+01
+	         GC_1 =  -0.00000E+00  -0.10265E+00
+	         GC_2 =   0.00000E+00   0.20530E+00
+	         GC_3 =  -0.00000E+00  -0.30795E+00
+	        GC_50 =  -0.00000E+00  -0.28804E+00
+	        GC_58 =  -0.00000E+00  -0.27437E-01
+	        GC_59 =   0.00000E+00   0.82310E-01
+	
+	 Collider parameters:
+	 --------------------
+	
+	 Running at P P   machine @    13000.000000000000       GeV
+	
+	Program received signal SIGFPE: Floating-point exception - erroneous arithmetic operation.
+	
+	Backtrace for this error:
+	#0  0x155554eb8960 in ???
+	#1  0x155554eb7ac5 in ???
+	#2  0x155554ba551f in ???
+		at ./signal/../sysdeps/unix/sysv/linux/x86_64/libc_sigaction.c:0
+	#3  0x5555555770ef in ???
+	#4  0x555555577c6d in ???
+	#5  0x555555578278 in ???
+	#6  0x55555558f270 in ???
+	#7  0x55555557551a in ???
+	#8  0x55555557595b in ???
+	#9  0x155554b8cd8f in __libc_start_call_main
+		at ../sysdeps/nptl/libc_start_call_main.h:58
+	#10  0x155554b8ce3f in __libc_start_main_impl
+		at ../csu/libc-start.c:392
+	#11  0x555555557564 in ???
+	#12  0xffffffffffffffff in ???
+	
+	ls status:
+	input_app.txt
+	run1_app.log
+	
+Please report this bug on https://bugs.launchpad.net/mg5amcnlo
+More information is found in '/users/dbhandari/madgraph4gpu/MG5aMC/mg5amcnlo/DY2j_cuda.mad/run_01_tag_1_debug.log'.
+Please attach this file to your report.[0m
+INFO:  
+INFO:  
+[1;34mcommand not executed: [0m
+quit
+INFO:  
+quit
+
+real	8m53.511s
+user	94m32.405s
+sys	15m48.896s
